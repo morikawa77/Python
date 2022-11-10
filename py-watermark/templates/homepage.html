@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envie suas imagens</title>
+</head>
+<body>
+  <div style="height: 100%;
+              min-height: 100%;
+              display: flex;
+              align-items: left;
+              justify-content: center;
+              flex-direction: column;
+              width: 420px;
+              margin: 0 auto;">
+    <div style="margin-top: 100px;">
+      <p><strong>Envie suas imagens</strong></p>
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="files" name="files" multiple><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+
+    <div style="margin-top: 100px;">
+      <p><strong>Após fazer o download não se esqueça de apagar os arquivos.</strong></p>
+      <form action="/delete_images" method="post" enctype="multipart/form-data">
+        <input type="submit" value="Apagar arquivos">
+      </form> 
+    </div>
+  </div>
+  
+</body>
+</html>
